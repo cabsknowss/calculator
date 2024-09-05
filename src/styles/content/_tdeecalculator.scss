@@ -1,0 +1,143 @@
+.tdeecalcu {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .tdeecalcu-container {
+    max-width: 500px;
+    border-radius: 1rem;
+    padding: 2rem;
+
+    background-color: $gradient-card;
+    box-shadow: $container-shadow;
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    .tdeecalcu-forms {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+}
+
+.tdeecalcu-forms__gender {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+
+  .tdeecalcu-forms__gender-radio {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .tdeecalcu-forms__gender-radio > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+  }
+}
+
+.tdeecalcu-forms__age {
+  display: flex;
+  align-items: center;
+  gap: 4.2rem;
+
+  input {
+    width: 50px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 0.2rem;
+  }
+
+  input::placeholder {
+    opacity: 0.6;
+  }
+}
+
+.tdeecalcu-forms__weight {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+
+  input {
+    width: 50px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 0.2rem;
+  }
+
+  input::placeholder {
+    opacity: 0.6;
+  }
+}
+
+.tdeecalcu-forms__height {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+
+  input {
+    width: 60px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 0.2rem;
+  }
+
+  input::placeholder {
+    opacity: 0.6;
+  }
+}
+
+.tdeecalcu-forms__activity {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  select {
+    width: 100px;
+    height: 40px;
+    font-size: 0.8rem;
+    border-radius: 6px;
+  }
+}
+
+.tdeecalcu-forms__button {
+  margin-block: 0.5rem;
+
+  .tdeecalcu-forms__btn {
+    padding: 1rem 1.5rem;
+    background-color: $clr-accent;
+    color: $clr-neutral-100;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+  }
+
+  .tdeecalcu-forms__btn:hover {
+    background-color: $clr-accent-hover;
+  }
+}
+
+.tdeecalcu-details {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-size: 1rem;
+
+    span {
+      color: $clr-neutral-100;
+    }
+  }
+}
+.tdeecalcu-details > * {
+  margin-block: 0.3rem;
+}

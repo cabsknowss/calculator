@@ -10,6 +10,11 @@
   h1 {
     font-size: 2rem;
     font-weight: $fw-semi-bold;
+    color: $clr-navigation-text;
+    transition: color 0.3s ease-out;
+  }
+
+  h1:hover {
     color: $clr-navigation-text-hover;
   }
 

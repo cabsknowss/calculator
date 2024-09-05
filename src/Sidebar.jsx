@@ -39,7 +39,9 @@ const Sidebar = () => {
 
   return (
     <>
-      <h1>Calculator</h1>
+      <Link style={{ textDecoration: "none" }} to="/">
+        <h1>Calculator</h1>
+      </Link>
       <ul className="sidebar__navlist">
         {navLists.map((nav, index) => (
           <Link key={index} to={nav.link}>
