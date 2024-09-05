@@ -2,7 +2,7 @@ import React from "react";
 import {
   Dialpad,
   FitnessCenter,
-  AttachMoney,
+  Straighten,
   MonitorWeight,
 } from "@mui/icons-material/";
 import { Link, useLocation } from "react-router-dom";
@@ -26,9 +26,9 @@ const Sidebar = () => {
       link: "/tdeecalcu",
     },
     {
-      text: "AttachMoney",
-      component: <AttachMoney style={muiStyle} />,
-      link: "/pesocalcu",
+      text: "Straighten",
+      component: <Straighten style={muiStyle} />,
+      link: "/unitcalcu",
     },
     {
       text: "MonitorWeight",

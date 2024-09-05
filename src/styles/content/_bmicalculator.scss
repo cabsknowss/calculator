@@ -7,9 +7,12 @@
   gap: 1rem;
 
   .bmicalcu-container {
-    max-width: 500px;
+    $max-width: 500px;
+    $padding: 1rem;
+
+    width: min(100% - $padding, $max-width);
     border-radius: 1rem;
-    padding: 2rem;
+    padding: $padding;
 
     background-color: $gradient-card;
     box-shadow: $container-shadow;
@@ -59,7 +62,11 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-inline: 1rem;
+  margin-inline: 2rem;
+
+  @media (max-width: $mobile-screen) {
+    justify-content: center;
+  }
 
   .bmicalcu-forms__inputs {
     display: flex;
@@ -67,11 +74,22 @@
     justify-content: center;
     gap: 1rem;
 
+    @media (max-width: $mobile-screen) {
+      align-items: flex-start;
+    }
+
     .bmicalcu-forms__input {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 1rem;
+
+      input {
+        @media (max-width: $mobile-screen) {
+          width: 50px;
+          height: 25px;
+        }
+      }
 
       .bmicalcu-forms__standard-input {
         display: flex;
@@ -80,6 +98,11 @@
       .bmicalcu-forms__standard-input > input {
         width: 90px;
         display: inline-flex;
+
+        @media (max-width: $mobile-screen) {
+          width: 40px;
+          height: 25px;
+        }
       }
 
       input::placeholder {
@@ -124,7 +147,11 @@
 .bmi-classification {
   border-radius: 1rem;
   padding: 2rem;
-  width: 500px;
+
+  $max-width: 500px;
+  $padding: 2rem;
+
+  width: min(100% - $padding, $max-width);
 
   background-color: $gradient-card;
   box-shadow: $container-shadow;

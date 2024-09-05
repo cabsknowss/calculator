@@ -19,12 +19,6 @@ body {
   height: 100%;
 }
 
-html {
-  font-family: var(--ff-sans);
-  font-size: var(--fs-regular);
-  color: var(--clr-neutral-900);
-}
-
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.2;
@@ -52,4 +46,12 @@ body {
   color: $clr-navigation-text;
   font-size: $fs-400;
   font-family: $ff-mono;
+}
+
+html {
+  font-size: 16px;
+
+  @media (max-width: $mobile-screen) {
+    font-size: 12px;
+  }
 }

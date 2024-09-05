@@ -141,10 +141,12 @@ const TdeeCalcu = () => {
         </div>
         <div className="tdeecalcu-details">
           <p>
-            Basal Metabolic Rate: <span>{bmr && <>{bmr}</>}cal</span>
+            Basal Metabolic Rate:
+            <span>{bmr && <>{`${bmr}cal`}</>}</span>
           </p>
           <p>
-            Your Maintenance Calories: <span>{tdee && <>{tdee}</>}cal</span>
+            Maintenance Calories:
+            <span>{tdee && <>{`${tdee}cal`}</>}</span>
           </p>
         </div>
       </div>

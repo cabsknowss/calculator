@@ -13,6 +13,11 @@
 
     display: flex;
     flex-direction: column;
+
+    @media (max-width: $mobile-screen) {
+      width: 250px;
+      height: 350px;
+    }
   }
 }
 

@@ -5,7 +5,7 @@ import Home from "./content/Home";
 import NumCalcu from "./content/NumCalcu";
 import BmiCalcu from "./content/BmiCalcu";
 import TdeeCalcu from "./content/TdeeCalcu";
-import PesoCalcu from "./content/PesoCalcu";
+import UnitCalcu from "./content/UnitCalcu";
 
 const App = () => {
   return (
@@ -25,7 +25,7 @@ const App = () => {
             <Route path="/tdeecalcu" element={<TdeeCalcu />}>
               {/* <TdeeCalcu /> */}
             </Route>
-            <Route path="/pesocalcu" element={<PesoCalcu />}>
+            <Route path="/unitcalcu" element={<UnitCalcu />}>
               {/* <PesoCalcu /> */}
             </Route>
             <Route path="/" element={<Home />}>

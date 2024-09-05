@@ -5,10 +5,22 @@
   grid-template-columns: 350px 1fr;
   grid-template-rows: 1fr;
 
+  @media (max-width: $mobile-screen) {
+    grid-template-areas:
+      "sidebar"
+      "content";
+    grid-template-columns: 1fr;
+    grid-template-rows: 170px 1fr;
+  }
+
   .sidebar {
     height: 100vh;
     grid-area: sidebar;
     background-color: $clr-sidebar;
+
+    @media (max-width: $mobile-screen) {
+      height: 100%;
+    }
   }
 
   .content {
@@ -16,5 +28,9 @@
     grid-area: content;
     background-color: $clr-content;
     padding: 5rem;
+
+    @media (max-width: $mobile-screen) {
+      padding: 2rem;
+    }
   }
 }
