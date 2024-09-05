@@ -121,9 +121,7 @@ const TdeeCalcu = () => {
                 id="activity"
                 onChange={(e) => setActivity(e.target.value)}
               >
-                <option value="" disabled hidden>
-                  Select an option
-                </option>
+                <option value="">Select an option</option>
                 <option value="sedentary">Sedentary (office job)</option>
                 <option value="light">Light Exercise (1-2 days/week)</option>
                 <option value="moderate">
