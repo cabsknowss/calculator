@@ -39,7 +39,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <Link style={{ textDecoration: "none" }} to="/">
+      <Link style={{ textDecoration: "none" }} to="/calculator">
         <h1>Calculator</h1>
       </Link>
       <ul className="sidebar__navlist">
