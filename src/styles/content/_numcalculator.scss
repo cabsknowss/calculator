@@ -9,7 +9,7 @@
     height: 500px;
     background: $gradient-card;
     border-radius: 1rem;
-    box-shadow: 0 0px 15px -5px $clr-neutral-500;
+    box-shadow: $container-shadow;
 
     display: flex;
     flex-direction: column;

@@ -1,1 +1,144 @@
-  
+.bmicalcu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  .bmicalcu-container {
+    max-width: 500px;
+    border-radius: 1rem;
+    padding: 2rem;
+
+    background-color: $gradient-card;
+    box-shadow: $container-shadow;
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+.bmicalcu-unit {
+  background-color: $clr-navigation-bg;
+  width: 80%;
+  padding: 0.5rem;
+  margin: auto;
+  border-radius: 1.2rem;
+  border: 1px solid hsl(0, 0%, 15%);
+  box-shadow: $container-shadow;
+  margin-bottom: 2rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+
+  .bmicalcu-unit__btn {
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 0;
+    color: $clr-navigation-text;
+    cursor: pointer;
+    transition: color 0.2s ease-in;
+  }
+
+  .bmicalcu-unit__btn:hover {
+    color: $clr-navigation-text-hover;
+  }
+
+  .bmicalcu-unit__btn.active {
+    color: $clr-accent;
+  }
+}
+
+.bmicalcu-forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-inline: 1rem;
+
+  .bmicalcu-forms__inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+    .bmicalcu-forms__input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      .bmicalcu-forms__standard-input {
+        display: flex;
+      }
+
+      .bmicalcu-forms__standard-input > input {
+        width: 90px;
+        display: inline-flex;
+      }
+
+      input::placeholder {
+        font-size: 0.85rem;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: $clr-accent;
+    color: $clr-neutral-100;
+    font-weight: $fw-semi-bold;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: $clr-accent-hover;
+  }
+}
+
+.bmicalcu-bmi {
+  margin: 1.5rem 1rem;
+
+  h3 {
+    text-align: left;
+    font-size: 1.5rem;
+    display: inline;
+    margin-right: 0.75rem;
+  }
+  .bmicalcu-bmi__box {
+    display: inline-block;
+    border-bottom: 1px solid $clr-navigation-bg-hover;
+    // background-color: white;
+    width: 25%;
+  }
+}
+
+.bmi-classification {
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 500px;
+
+  background-color: $gradient-card;
+  box-shadow: $container-shadow;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .classified {
+    color: $clr-accent-hover;
+  }
+
+  span {
+    font-weight: $fw-bold;
+  }
+}

@@ -13,14 +13,6 @@ $clr-secondary-heading-hover: hsl(0, 0%, 78%);
 $clr-accent: hsl(209, 100%, 50%);
 $clr-accent-hover: hsl(209, 97%, 39%);
 
-$gradient-card: linear-gradient(to bottom, hsl(0, 0%, 12%), hsl(0, 0%, 8%));
-
-$gradient-text: linear-gradient(
-  to bottom,
-  hsl(216, 100%, 89%),
-  hsl(216, 12%, 47%)
-);
-
 $clr-success-400: hsl(99, 70%, 58%);
 $clr-success-200: hsl(99, 70%, 75%);
 $clr-error-400: hsl(2, 78%, 54%);
@@ -35,6 +27,16 @@ $clr-neutral-400: hsl(0, 0%, 82%);
 $clr-neutral-300: hsl(0, 0%, 88%);
 $clr-neutral-200: hsl(0, 0%, 94%);
 $clr-neutral-100: hsl(0, 0%, 100%);
+
+$gradient-card: linear-gradient(to bottom, hsl(0, 0%, 12%), hsl(0, 0%, 8%));
+
+$gradient-text: linear-gradient(
+  to bottom,
+  hsl(216, 100%, 89%),
+  hsl(216, 12%, 47%)
+);
+
+$container-shadow: 0 0px 15px -5px $clr-neutral-500;
 
 $ff-sans: "Helvetica", sans-serif;
 $ff-serif: "Georgia", "Times New Roman", serif;
