@@ -1,0 +1,16 @@
+@import url("https://fonts.cdnfonts.com/css/calculator");
+
+// base
+@import "./base/variables";
+@import "./base/base";
+@import "./base/utility";
+
+// layout
+@import "./layout/app";
+@import "./layout/sidebar";
+
+// page
+@import "./content/numcalculator";
+@import "./content/bmicalculator";
+@import "./content/tdeecalculator";
+@import "./content/pesoconverter";

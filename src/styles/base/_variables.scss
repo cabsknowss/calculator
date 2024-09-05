@@ -1,0 +1,64 @@
+$clr-content: hsl(0, 0%, 0%);
+$clr-sidebar: hsl(0, 0%, 5%);
+$clr-navigation-bg: hsl(0, 0%, 7%);
+$clr-navigation-bg-hover: hsl(0, 0%, 48%);
+$clr-navigation-text: hsl(0, 0%, 47%);
+$clr-navigation-text-hover: hsl(0, 0%, 78%);
+$clr-primary-heading: hsl(216, 100%, 89%);
+$clr-primary-heading-caption: hsl(216, 12%, 47%);
+$clr-secondary-heading: hsl(0, 0%, 80%);
+$clr-secondary-heading-caption: hsl(0, 0%, 48%);
+$clr-secondary-heading-hover: hsl(0, 0%, 78%);
+
+$clr-accent: hsl(209, 100%, 50%);
+$clr-accent-hover: hsl(209, 97%, 39%);
+
+$gradient-card: linear-gradient(to bottom, hsl(0, 0%, 12%), hsl(0, 0%, 8%));
+
+$gradient-text: linear-gradient(
+  to bottom,
+  hsl(216, 100%, 89%),
+  hsl(216, 12%, 47%)
+);
+
+$clr-success-400: hsl(99, 70%, 58%);
+$clr-success-200: hsl(99, 70%, 75%);
+$clr-error-400: hsl(2, 78%, 54%);
+$clr-error-200: hsl(2, 78%, 75%);
+
+$clr-neutral-900: hsl(0, 0%, 0%);
+$clr-neutral-800: hsl(0, 0%, 6%);
+$clr-neutral-700: hsl(0, 0%, 12%);
+$clr-neutral-600: hsl(0, 0%, 18%);
+$clr-neutral-500: hsl(0, 0%, 50%);
+$clr-neutral-400: hsl(0, 0%, 82%);
+$clr-neutral-300: hsl(0, 0%, 88%);
+$clr-neutral-200: hsl(0, 0%, 94%);
+$clr-neutral-100: hsl(0, 0%, 100%);
+
+$ff-sans: "Helvetica", sans-serif;
+$ff-serif: "Georgia", "Times New Roman", serif;
+$ff-mono: "Courier New", "Roboto Mono", monospace;
+
+$fw-regular: 400;
+$fw-semi-bold: 500;
+$fw-bold: 700;
+
+$fs-100: 0.8125rem;
+$fs-200: 0.875rem;
+$fs-300: 0.9375rem;
+$fs-400: 1rem;
+$fs-500: 1.33rem;
+$fs-600: 1.875rem;
+$fs-700: 2.5rem;
+$fs-800: 3.5rem;
+
+$size-100: 0.25rem;
+$size-200: 0.5rem;
+$size-300: 0.75rem;
+$size-400: 1rem;
+$size-500: 1.5rem;
+$size-600: 2rem;
+$size-700: 2.5rem;
+$size-800: 3rem;
+$size-900: 3.5rem;

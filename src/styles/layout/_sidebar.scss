@@ -1,0 +1,46 @@
+.sidebar {
+  padding: 7rem 4rem;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 3rem;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: $fw-semi-bold;
+    color: $clr-navigation-text-hover;
+  }
+
+  .sidebar__navlist {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 1rem 0;
+    justify-items: center;
+
+    .sidebar__nav {
+      width: 75px;
+      height: 75px;
+      background-color: $clr-navigation-bg;
+      color: $clr-navigation-text;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      transition: color 0.2s ease-in, background-color 0.2s ease-in;
+    }
+
+    .sidebar__nav.active {
+      background-color: $clr-accent;
+      color: $clr-neutral-100;
+    }
+
+    .sidebar__nav:hover:not(.nohover) {
+      background-color: hsl(0, 0%, 6%);
+      color: $clr-navigation-text-hover;
+    }
+  }
+}
